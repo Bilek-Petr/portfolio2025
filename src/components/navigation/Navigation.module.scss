@@ -1,0 +1,47 @@
+// .nav {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   background-color: var(--accent);
+//   color: var(--light);
+//   transition: transform 300ms ease-in-out;
+//   width: 100%;
+//   transform: translateX(-100%);
+
+//   &[data-state='open'] {
+//     transform: translateX(0);
+//   }
+
+//   @media (min-width: 768px) {
+//     width: clamp(13rem, 20vw, 17.5rem);
+//     transform: translateX(0);
+//   }
+// }
+
+.nav {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background-color: var(--accent);
+  color: var(--light);
+  transition: transform 300ms ease-in-out;
+  width: 100%;
+  transform: translateX(-100%);
+
+  &[data-state='open'] {
+    transform: translateX(0);
+  }
+
+  @media (min-width: 768px) {
+    width: clamp(13rem, 20vw, 17.5rem);
+    transform: translateX(0);
+  }
+
+  // Only use fixed positioning for mobile menu
+  @media (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
