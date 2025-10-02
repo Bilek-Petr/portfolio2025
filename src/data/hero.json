@@ -1,6 +1,10 @@
 {
-  "title": "My name is Petr Bílek",
-  "subtitle": "Frontend Developer | Mountaineer",
-  "buttonText": "View Projects",
-  "buttonLink": "/projects"
+  "title": "My name is",
+  "name": "Petr Bílek...",
+  "occupation": "Frontend Developer",
+  "subtitle": "Mountaineer",
+  "btnText": "Let's talk with me",
+  "btnLink": "/projects",
+  "profileImage": "/images/profile.webp",
+  "profileAlt": "Profile picture of Petr Bílek"
 }

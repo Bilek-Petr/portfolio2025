@@ -9,7 +9,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
   return (
     <div className="flex min-h-screen">
       <Navigation />
-      <main className="flex-1">{children}</main>
+      <main className="container flex-1">{children}</main>
       <SocialsSidebar />
     </div>
   );

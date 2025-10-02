@@ -1,9 +1,13 @@
 // Hero section
 export interface HeroData {
   title: string;
+  name: string;
+  occupation: string;
   subtitle: string;
-  buttonText: string;
-  buttonLink: string;
+  btnText: string;
+  btnLink: string;
+  profileImage: string;
+  profileAlt: string;
 }
 
 // About section
