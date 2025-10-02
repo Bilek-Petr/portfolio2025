@@ -1,5 +1,12 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #1a1a1a;
+  --light: #ffffff;
+}
 
 body {
-  font-family: var(--font-ibm-plex-sans), "IBM Plex Sans", Arial, sans-serif;
+  font-family: var(--font-ibm-plex-sans), 'IBM Plex Sans', Arial, sans-serif;
 }
