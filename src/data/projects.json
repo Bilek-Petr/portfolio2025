@@ -1,0 +1,30 @@
+{
+  "headline": "Recent Project",
+  "items": [
+    {
+      "type": "Work Project",
+      "title": "Pool Product Configurator",
+      "image": "pool-product-configurator.png",
+      "link": "#"
+    },
+    {
+      "type": "Work Project",
+      "title": "Company Website Noving",
+      "image": "company-website-noving.png",
+      "link": "#"
+    },
+    {
+      "type": "Work Project",
+      "title": "Company Website Eurobach",
+      "image": "company-website-eurobach.png",
+      "link": "#"
+    },
+    {
+      "type": "Personal Project",
+      "title": "Old Personal Portfolio",
+      "image": "old-personal-portfolio.png",
+      "link": "#"
+    }
+  ],
+  "cta": { "label": "See more", "link": "#" }
+}

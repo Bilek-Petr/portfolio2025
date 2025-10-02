@@ -1,0 +1,30 @@
+{
+  "logo": "PB",
+  "menuItems": [
+    { "label": "HOME", "url": "#home" },
+    { "label": "ABOUT", "url": "#about" },
+    { "label": "EXPERIENCE", "url": "#experience" },
+    { "label": "PROJECTS", "url": "#projects" },
+    { "label": "CONTACT", "url": "#contact" }
+  ],
+  "socialIcons": [
+    {
+      "platform": "LinkedIn",
+      "src": "/icons/linkedin.svg",
+      "url": "https://www.linkedin.com/in/petr-bílek-a5b096314",
+      "alt": "LinkedIn icon"
+    },
+    {
+      "platform": "GitHub",
+      "src": "/icons/github.svg",
+      "url": "https://github.com/Bilek-Petr",
+      "alt": "GitHub icon"
+    },
+    {
+      "platform": "Instagram",
+      "src": "/icons/instagram.svg",
+      "url": "https://www.instagram.com/petr.bilek.99/",
+      "alt": "Instagram icon"
+    }
+  ]
+}
