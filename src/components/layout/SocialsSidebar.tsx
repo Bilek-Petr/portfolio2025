@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavigationSocialIcon } from '@/types';
 import { IconCircle } from '../ui/iconCircle/IconCircle';
 import navigationData from '@/data/navigation.json';
 
