@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import heroData from '@/data/hero.json';
 import { HeroData } from '@/types';
+import Button from '@/components/ui/button/Button';
 
 // Type check the imported JSON data
 const typedHeroData: HeroData = heroData as HeroData;
@@ -27,10 +28,10 @@ const Hero: React.FC = () => {
         </h1>
         <h2 className="text-[clamp(1.325rem,2.5vw,2rem)] italic">
           <span className="font-bold">{occupation}</span>{' '}
-          <span className="xs:inline hidden">|</span>{' '}
+          <span className="hidden xs:inline">|</span>{' '}
           <span className="font-light">{subtitle}</span>
         </h2>
-        <button className="bg-accent px-4 py-2 text-white">{btnText}</button>
+        <Button href={btnLink} variant="primary" label={btnText}></Button>
       </div>
 
       <div className="w-3/4 lg:w-full">
