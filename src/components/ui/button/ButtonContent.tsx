@@ -24,11 +24,7 @@ export default function ButtonContent({
       icon
     );
 
-  const iconElement = displayIcon && (
-    <span className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
-      {displayIcon}
-    </span>
-  );
+  const iconElement = displayIcon && <span>{displayIcon}</span>;
 
   return (
     <span className="inline-flex items-center gap-6">
