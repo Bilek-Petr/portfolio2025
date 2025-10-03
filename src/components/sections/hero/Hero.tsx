@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="flex min-h-screen flex-col items-center justify-center gap-[clamp(2rem,6vw,7rem)] p-6 text-center lg:flex-row">
-      <div className="flex flex-col items-center gap-10 pt-20 lg:items-start lg:pt-0 lg:text-left">
+      <div className="relative flex flex-col items-center gap-10 pt-20 lg:items-start lg:pt-0 lg:text-left">
         <h1 className="text-[clamp(2.75rem,6.5vw,6.75rem)] uppercase leading-none">
           {title} <span className="font-bold">{name}</span>
         </h1>
@@ -32,6 +32,15 @@ const Hero: React.FC = () => {
           <span className="font-light">{subtitle}</span>
         </h2>
         <Button href={btnLink} variant="primary" label={btnText}></Button>
+        <div>
+          <Image
+            src="images/hero-shape.svg"
+            alt="decorative shape"
+            width={200}
+            height={110}
+            className="absolute hidden -left-10 -top-5 -z-10 lg:block"
+          />
+        </div>
       </div>
 
       <div className="w-3/4 lg:w-full">
