@@ -1,0 +1,22 @@
+@keyframes flyAway {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(100px, -100px);
+    opacity: 0;
+  }
+  26% {
+    transform: translate(-100px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.flyAnimation {
+  animation: flyAway 2s ease-in-out;
+}
