@@ -1,5 +1,6 @@
 {
-  "headline": "Hello there! NICE TO MEET YOU!",
+  "preheadline": "Hello there!",
+  "headline": "NICE TO MEET YOU!",
   "name": "Petr Bílek",
   "tagline": "Wanderer who ended up developing web apps",
   "role": "Frontend developer",

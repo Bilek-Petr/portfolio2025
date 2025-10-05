@@ -30,6 +30,7 @@ export interface AboutCV {
 }
 
 export interface AboutData {
+  preheadline: string;
   headline: string;
   name: string;
   tagline: string;
@@ -53,6 +54,7 @@ export interface ExperienceResume {
   link: string;
 }
 export interface ExperienceData {
+  preheadline: string;
   headline: string;
   intro: string;
   jobs: ExperienceJob[];
@@ -71,6 +73,7 @@ export interface ProjectsCTA {
   link: string;
 }
 export interface ProjectsData {
+  preheadline: string;
   headline: string;
   items: ProjectItem[];
   cta: ProjectsCTA;
