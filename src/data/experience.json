@@ -1,26 +1,29 @@
 {
   "preheadline": "Experience",
   "headline": "My Experience",
-  "intro": "I started coding at highschool while studying IT. During uni years I had it only as a hobby. After graduating I decided to hop into the field. Despite spending only half a year in the commercial environment, I’m eager to continue in that journey.",
-  "jobs": [
+  "intro": "I started coding at highschool while studying IT. During uni years it only used to serve as a hobby and distraction. After graduating I decided to hop into the field. Despite spending only half a year in the commercial environment, I’m eager to continue in that journey and learn from the best.",
+  "experience": [
     {
       "period": "5/2025 - 9/2025",
-      "title": "Mountain Rescuer",
-      "company": "—",
+      "title": "Mountain Rescue",
+      "company": "",
       "location": "Lofoten, Norway"
     },
     {
       "period": "12/2024 - 5/2025",
       "title": "Frontend Developer",
       "company": "Poski",
-      "location": "—"
+      "location": ""
     },
     {
       "period": "9/2022 - 6/2023",
       "title": "Windows Specialist",
       "company": "Tietoevry",
-      "location": "—"
+      "location": ""
     }
   ],
-  "resume": { "label": "Download my resume", "link": "#" }
+  "button": {
+    "label": "See my projects",
+    "link": "#projects"
+  }
 }

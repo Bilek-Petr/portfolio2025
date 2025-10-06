@@ -47,16 +47,16 @@ export interface ExperienceJob {
   company: string;
   location: string;
 }
-export interface ExperienceResume {
-  label: string;
-  link: string;
-}
+
 export interface ExperienceData {
   preheadline: string;
   headline: string;
   intro: string;
-  jobs: ExperienceJob[];
-  resume: ExperienceResume;
+  experience: ExperienceJob[];
+  button: {
+    label: string;
+    link: string;
+  };
 }
 
 // Projects section
