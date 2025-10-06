@@ -1,0 +1,9 @@
+.highlight {
+  :global(.highlight) {
+    color: var(--gradient-start);
+  }
+
+  :global(.highlight-bold) {
+    font-weight: bold;
+  }
+}

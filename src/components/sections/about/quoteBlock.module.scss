@@ -1,0 +1,25 @@
+.quoteBlock {
+  position: relative;
+  display: inline-block;
+
+  @media (min-width: 767px) {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 3.25rem;
+      height: 2.125rem;
+      top: 50%;
+      left: -4.5rem;
+      transform: translateY(-50%);
+      background-color: #525252;
+      mask-image: url('/icons/quotes.svg');
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      mask-position: center;
+      -webkit-mask-image: url('/icons/quotes.svg');
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      -webkit-mask-position: center;
+    }
+  }
+}
