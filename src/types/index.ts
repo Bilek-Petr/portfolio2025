@@ -16,12 +16,9 @@ export interface AboutContact {
   label: string;
   icon: string;
 }
-export interface AboutExperience {
-  years: string;
-  description: string;
-}
-export interface AboutProjects {
-  count: string;
+export interface AboutBio {
+  amount: string;
+  unit: string;
   description: string;
 }
 export interface AboutCV {
@@ -32,12 +29,13 @@ export interface AboutCV {
 export interface AboutData {
   preheadline: string;
   headline: string;
+  image: string;
+  imageAlt: string;
   name: string;
   tagline: string;
   role: string;
   contact: AboutContact[];
-  experience: AboutExperience;
-  projects: AboutProjects;
+  bio: AboutBio[];
   quote: string;
   cv: AboutCV;
 }

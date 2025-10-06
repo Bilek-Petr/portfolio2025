@@ -1,27 +1,41 @@
 {
   "preheadline": "Hello there!",
   "headline": "NICE TO MEET YOU!",
+  "image": "/images/profile-about.webp",
+  "imageAlt": "Picture of Petr Bílek",
   "name": "Petr Bílek",
-  "tagline": "Wanderer who ended up developing web apps",
+  "tagline": "<span class=\"highlight-bold\">Wanderer</span> who ended up <span class=\"highlight-bold\">developing web apps</span>",
   "role": "Frontend developer",
   "contact": [
-    { "type": "role", "label": "Frontend developer", "icon": "briefcase" },
-    { "type": "email", "label": "p.bilek29@gmail.com", "icon": "mail" },
-    { "type": "age", "label": "25 yrs", "icon": "user" },
+    {
+      "type": "role",
+      "label": "Frontend developer",
+      "icon": "/icons/occupation.svg"
+    },
+    {
+      "type": "email",
+      "label": "p.bilek29@gmail.com",
+      "icon": "/icons/post.svg"
+    },
+    { "type": "age", "label": "26 yrs", "icon": "/icons/user.svg" },
     {
       "type": "location",
       "label": "Ostrava, Czech Republic",
-      "icon": "map-pin"
+      "icon": "/icons/location.svg"
     }
   ],
-  "experience": {
-    "years": "1.5",
-    "description": "Hello there! My name is Petr Bílek. I am a frontend developer, who values clean and efficient solutions. I love minimalistic approach — both in my design and in my life. Oh yes, I do like gradients and animations."
-  },
-  "projects": {
-    "count": "dozen",
-    "description": "I’m not a geek. Coding ain’t my life. Nonetheless I do really enjoy the process of learning new stuff, technologies and to challenge myself. And if I’m offline, chances are you’ll bump into me in the mountains."
-  },
+  "bio": [
+    {
+      "amount": "1.5",
+      "unit": "Years of experience...",
+      "description": "Hello there! My name is <span class=\"highlight\">Petr Bílek</span>. I am a frontend developer, who values clean and efficient solutions. I love minimalistic approach — both in my design and in my life. Oh yes, I do like gradients and animations."
+    },
+    {
+      "amount": "dozen",
+      "unit": "Projects completed...",
+      "description": "I’m <span class=\"highlight\">not a geek</span>. Coding ain’t my life. Nonetheless I do really enjoy the process of learning new stuff, technologies and to challenge myself. And if I’m offline, chances are you’ll bump into me in the mountains."
+    }
+  ],
   "quote": "Beautiful things don’t ask for attention",
-  "cv": { "label": "Download CV", "link": "#" }
+  "cv": { "label": "Download CV", "link": "/assets/cv/CV_Petr_Bilek.pdf" }
 }
