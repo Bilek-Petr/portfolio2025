@@ -27,7 +27,7 @@ export default function About() {
 
   return (
     <>
-      <section id="about" className="py-8">
+      <section id="about" className="container py-8">
         <SectionTitle preheadline={preheadline} headline={headline} />
 
         <div className="flex flex-col items-center gap-10 pt-10 lg:gap-28 lg:pt-20 2xl:flex-row">

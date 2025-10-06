@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
   } = typedHeroData;
 
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center gap-[clamp(2rem,6vw,7rem)] p-6 text-center lg:flex-row">
+    <section className="container flex min-h-screen flex-col items-center justify-center gap-[clamp(2rem,6vw,7rem)] p-6 text-center lg:flex-row">
       <div className="relative flex flex-col items-center gap-10 pt-20 lg:items-start lg:pt-0 lg:text-left">
         <h1 className="text-[clamp(2.75rem,6.5vw,6.75rem)] uppercase leading-none">
           {title} <span className="font-bold">{name}</span>

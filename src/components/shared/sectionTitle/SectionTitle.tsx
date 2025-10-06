@@ -17,7 +17,7 @@ export default function SectionTitle({
       role="heading"
       aria-label={headline}
     >
-      <span className="italic font-light text-header-sm">{preheadline}</span>
+      <span className="italic font-light text-base-md">{preheadline}</span>
       <h2 className="font-bold uppercase text-header-md">{headline}</h2>
     </div>
   );
