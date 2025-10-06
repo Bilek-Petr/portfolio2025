@@ -1,31 +1,55 @@
 {
   "preheadline": "Work",
-  "headline": "Recent Project",
+  "headline": "Recent Projects",
   "items": [
     {
-      "type": "Work Project",
+      "type": "Work",
       "title": "Pool Product Configurator",
-      "image": "pool-product-configurator.png",
+      "image": "/images/configurator.png",
       "link": "#"
     },
     {
-      "type": "Work Project",
+      "type": "Work",
       "title": "Company Website Noving",
-      "image": "company-website-noving.png",
+      "image": "/images/site-noving.png",
       "link": "#"
     },
     {
-      "type": "Work Project",
+      "type": "Work",
       "title": "Company Website Eurobach",
-      "image": "company-website-eurobach.png",
+      "image": "/images/site-eurobach.png",
       "link": "#"
     },
     {
-      "type": "Personal Project",
+      "type": "Personal",
       "title": "Old Personal Portfolio",
-      "image": "old-personal-portfolio.png",
+      "image": "/images/site-old-portfolio.png",
+      "link": "#"
+    },
+    {
+      "type": "Work",
+      "title": "Interactive Pool Designer",
+      "image": "/images/configurator.png",
+      "link": "#"
+    },
+    {
+      "type": "Work",
+      "title": "Noving Corporate Site",
+      "image": "/images/site-noving.png",
+      "link": "#"
+    },
+    {
+      "type": "Work",
+      "title": "Eurobach Business Portal",
+      "image": "/images/site-eurobach.png",
+      "link": "#"
+    },
+    {
+      "type": "Personal",
+      "title": "Previous Portfolio Showcase",
+      "image": "/images/site-old-portfolio.png",
       "link": "#"
     }
   ],
-  "cta": { "label": "See more", "link": "#" }
+  "cta": { "label": "See more projects", "link": "#" }
 }

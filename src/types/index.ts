@@ -61,7 +61,7 @@ export interface ExperienceData {
 
 // Projects section
 export interface ProjectItem {
-  type: string;
+  type: 'Work' | 'Personal';
   title: string;
   image: string;
   link: string;
