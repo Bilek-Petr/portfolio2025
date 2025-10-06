@@ -5,6 +5,7 @@
 :root {
   --accent: #1a1a1a;
   --light: #ffffff;
+  --gradient-start: #b86adf;
 }
 
 body {

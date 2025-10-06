@@ -17,6 +17,11 @@ module.exports = {
       screens: {
         xs: '415px',
       },
+      fontSize: {
+        'base-sm': 'clamp(0.94rem,1.75vw,1.125rem)',
+        'header-sm': 'clamp(1.5rem,2.5vw,2rem)',
+        'header-md': 'clamp(1.9rem,3vw,3rem)',
+      },
       colors: {
         primary: '#FFB147',
         secondary: '#FF8C63',
@@ -32,7 +37,25 @@ module.exports = {
         'gradient-custom-vertical':
           'linear-gradient(to bottom, #FFB147, #FF8C63, #B86ADF)',
       },
+      textFillColor: {
+        gradient: 'transparent',
+      },
+      backgroundClip: {
+        text: 'text',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-gradient': {
+          'background-image':
+            'linear-gradient(to right, #B86ADF, #FF8C63, #FFB147)',
+          '-webkit-background-clip': 'text',
+          'background-clip': 'text',
+          color: 'transparent',
+        },
+      });
+    },
+  ],
 };
