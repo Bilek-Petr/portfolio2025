@@ -19,6 +19,7 @@ module.exports = {
       },
       fontSize: {
         'base-sm': 'clamp(0.94rem,1.75vw,1.125rem)',
+        'base-md': 'clamp(1rem, 2vw, 1.25rem)',
         'header-sm': 'clamp(1.5rem,2.5vw,2rem)',
         'header-md': 'clamp(1.9rem,3vw,3rem)',
       },
