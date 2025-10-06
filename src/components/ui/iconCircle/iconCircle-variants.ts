@@ -9,7 +9,7 @@ export const iconCircleVariants = cva(
         lightBordered:
           'bg-light border border-gray-200 text-accent hover:bg-gray-100',
         dark: 'bg-accent text-white fill-white hover:bg-gray-100',
-        medium: 'bg-gray-200 text-white fill-white hover:bg-gray-200',
+        medium: 'bg-gray-100/80',
       },
       size: {
         sm: 'w-8 h-8',
@@ -32,7 +32,7 @@ export const iconCircleVariants = cva(
 export const iconSizeVariants = cva('', {
   variants: {
     size: {
-      sm: 'w-5 h-5',
+      sm: 'w-6 h-6',
       md: 'w-7 h-7',
       lg: 'w-10 h-10',
     },

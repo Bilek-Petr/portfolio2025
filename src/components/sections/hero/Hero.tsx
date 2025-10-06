@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import heroData from '@/data/hero.json';
 import { HeroData } from '@/types';
-import Button from '@/components/ui/button/Button';
+import Button from '@/components/ui/button/regular/Button';
 
 // Type check the imported JSON data
 const typedHeroData: HeroData = heroData as HeroData;

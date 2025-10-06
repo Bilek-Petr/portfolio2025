@@ -19,7 +19,7 @@ export default function DownloadCTA({
     if (isSuccess) {
       const timer = setTimeout(() => {
         setIsSuccess(false);
-      }, 2000); // Match this with animation duration
+      }, 2000);
       return () => clearTimeout(timer);
     }
   }, [isSuccess]);
