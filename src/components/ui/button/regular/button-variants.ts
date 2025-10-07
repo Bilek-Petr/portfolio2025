@@ -1,12 +1,11 @@
 import { cva, type VariantProps } from 'class-variance-authority';
 
 export const buttonVariants = cva(
-  'relative inline-flex items-center justify-center font-medium transition-colors overflow-hidden isolate group',
+  'relative inline-flex gap-4 items-center justify-center font-medium transition-colors overflow-hidden isolate group',
   {
     variants: {
       variant: {
-        primary:
-          'bg-black text-white after:absolute after:inset-0 after:bg-gradient-custom after:left-[72%] after:transition-all after:duration-400 after:-z-10 hover:after:left-0',
+        primary: ['bg-black text-white'],
         secondary: 'bg-white text-black border-2 border-black',
         outline:
           'border-2 border-black bg-transparent hover:bg-black hover:text-white',
@@ -28,5 +27,15 @@ export const buttonVariants = cva(
     },
   }
 );
+
+export const iconStyles = {
+  default: 'h-7 w-7',
+  container: 'relative z-10 flex items-center justify-center ml-4',
+};
+
+export const contentStyles = {
+  wrapper: 'flex items-center justify-between w-full',
+  label: 'relative z-10 pr-4 md:pr-6',
+};
 
 export type ButtonVariants = VariantProps<typeof buttonVariants>;
