@@ -34,7 +34,7 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-custom':
-          'linear-gradient(to right, #B86ADF, #FF8C63, #FFB147)',
+          'linear-gradient(to right, #B86ADF, #FF8255, #FFAA3A)',
         'gradient-custom-vertical':
           'linear-gradient(to bottom, #FFB147, #FF8C63, #B86ADF)',
       },

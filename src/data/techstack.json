@@ -31,20 +31,21 @@
       "icon": "/icons/tools/react.svg"
     },
     {
-      "name": "MongoDB",
-      "icon": "/icons/tools/mongodb.svg"
-    },
-    {
       "name": "Next.js",
       "icon": "/icons/tools/nextjs.svg"
     },
     {
-      "name": "Figma",
-      "icon": "/icons/tools/figma.svg"
+      "name": "MongoDB",
+      "icon": "/icons/tools/mongodb.svg"
     },
     {
       "name": "PHP",
       "icon": "/icons/tools/php.svg"
+    },
+
+    {
+      "name": "Figma",
+      "icon": "/icons/tools/figma.svg"
     },
     {
       "name": "Git",
