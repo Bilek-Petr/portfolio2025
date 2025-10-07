@@ -13,7 +13,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-16 mt-10 bg-gradient-custom lg:mt-16 lg:py-28"
+      className="py-16 mt-10 bg-gradient-custom lg:mt-16 lg:rounded-e-2xl lg:py-28"
     >
       <div className="container grid gap-10 lg:grid-cols-[1fr,2fr] lg:gap-20">
         <div className="flex flex-col gap-6 lg:gap-12">
@@ -22,10 +22,7 @@ export default function Experience() {
             headline={headline}
             variant="light"
           />
-          <p className="text-base-sm text-light">{intro}</p>
-          <div className="align-self-start">
-            <Button href={button.link} label={button.label} variant="primary" />
-          </div>
+          <p className="text-base-sm text-light/95">{intro}</p>
         </div>
 
         <div>

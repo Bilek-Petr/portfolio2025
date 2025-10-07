@@ -11,12 +11,12 @@ export default function ExperienceCard({ job }: ExperienceCardProps) {
       <div className="flex justify-between">
         <span className="text-[1rem] font-medium italic">{job.period}</span>
         {job.company ? (
-          <span className="text-[0.925rem]">
+          <span className="text-[0.925rem] font-medium">
             {job.company}
             {job.location && <span>, {job.location}</span>}
           </span>
         ) : (
-          <span className="text-[0.925rem]">{job.location}</span>
+          <span className="text-[0.925rem] font-medium">{job.location}</span>
         )}
       </div>
       <h3 className="font-bold uppercase text-header-sm">{job.title}</h3>
