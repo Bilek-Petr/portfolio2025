@@ -105,3 +105,15 @@ export interface NavigationData {
   menuItems: NavigationMenuItem[];
   socialIcons: NavigationSocialIcon[];
 }
+
+// Techstack section
+export interface ToolItem {
+  name: string;
+  icon: string;
+}
+
+export interface TechstackData {
+  preheadline: string;
+  headline: string;
+  tools: ToolItem[];
+}
