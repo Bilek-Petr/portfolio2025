@@ -11,11 +11,6 @@ const typedProjectsData = projectsData as ProjectsData;
 export default function Projects() {
   const [visibleCount, setVisibleCount] = useState(4);
   const visibleProjects = typedProjectsData.items.slice(0, visibleCount);
-  const hasMoreProjects = typedProjectsData.items.length > visibleCount;
-
-  const handleLoadMore = () => {
-    setVisibleCount(typedProjectsData.items.length);
-  };
 
   const handleToggleProjects = () => {
     setVisibleCount((prevCount) =>
