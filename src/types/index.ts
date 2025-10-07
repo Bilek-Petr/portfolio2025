@@ -85,7 +85,8 @@ export interface FooterSocialLink {
   url: string;
 }
 export interface FooterData {
-  title: string;
+  preheadline: string;
+  headline: string;
   socialLinks: FooterSocialLink[];
 }
 

@@ -1,23 +1,24 @@
 {
-  "title": "LET'S WORK TOGETHER",
+  "preheadline": "Collaboration",
+  "headline": "LET'S WORK TOGETHER",
   "socialLinks": [
     {
       "id": "01",
       "platform": "GitHub",
       "description": "Check some of my other code and work on my github.",
-      "url": "#"
+      "url": "https://github.com/Bilek-Petr"
     },
     {
       "id": "02",
       "platform": "LinkedIn",
       "description": "My career path includes a few companies, but you can get an idea of me.",
-      "url": "#"
+      "url": "https://www.linkedin.com/in/petr-b%C3%ADlek-a5b096314/"
     },
     {
       "id": "03",
       "platform": "Instagram",
       "description": "Get to know me better? See the way I live my life. Check me out here. :-)",
-      "url": "#"
+      "url": "https://www.instagram.com/petr.bilek.99/"
     }
   ]
 }
