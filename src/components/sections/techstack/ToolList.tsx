@@ -9,7 +9,7 @@ interface ToolListProps {
 
 export default function ToolList({ tools }: ToolListProps) {
   return (
-    <div className="flex flex-wrap justify-center gap-4 pt-16 lg:justify-start">
+    <div className="flex flex-wrap justify-center gap-4 pt-16 pb-4 lg:justify-start">
       {tools.map((tool, index) => (
         <ToolItem key={index} tool={tool} />
       ))}
