@@ -11,3 +11,13 @@
 body {
   font-family: var(--font-ibm-plex-sans), 'IBM Plex Sans', Arial, sans-serif;
 }
+
+::selection {
+  background-color: #c74313; /* Change this to any color you want */
+  color: #ffffff; /* Text color when selected */
+}
+
+::-moz-selection {
+  background-color: #c74313; /* For Firefox */
+  color: #ffffff;
+}
