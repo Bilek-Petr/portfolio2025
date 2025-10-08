@@ -22,6 +22,7 @@ module.exports = {
         'base-md': 'clamp(1rem, 2vw, 1.25rem)',
         'header-sm': 'clamp(1.5rem,2.5vw,2rem)',
         'header-md': 'clamp(1.9rem,3vw,3rem)',
+        'header-lg': 'clamp(2.75rem,6.5vw,7.15rem)',
       },
       colors: {
         primary: '#FFB147',

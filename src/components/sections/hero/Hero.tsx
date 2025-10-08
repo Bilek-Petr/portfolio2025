@@ -23,10 +23,10 @@ const Hero: React.FC = () => {
   return (
     <section className="container flex min-h-screen flex-col items-center justify-center gap-[clamp(2rem,6vw,7rem)] p-6 text-center lg:flex-row">
       <div className="relative flex flex-col items-center gap-10 pt-20 lg:items-start lg:pt-0 lg:text-left">
-        <h1 className="text-[clamp(2.75rem,6.5vw,6.75rem)] uppercase leading-none">
+        <h1 className="leading-none uppercase text-header-lg">
           {title} <span className="font-bold">{name}</span>
         </h1>
-        <h2 className="text-[clamp(1.325rem,2.5vw,2rem)] italic">
+        <h2 className="italic text-header-sm">
           <span className="font-bold">{occupation}</span>{' '}
           <span className="hidden xs:inline">|</span>{' '}
           <span className="font-light">{subtitle}</span>
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-3/4 lg:w-full">
+      <div className="w-full max-w-[500px] md:max-w-full">
         <Image src={profileImage} width={1350} height={1425} alt={profileAlt} />
       </div>
     </section>
