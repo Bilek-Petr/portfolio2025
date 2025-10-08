@@ -27,7 +27,7 @@
 
   // Scale the hovered/focused item
   &:is(:hover, :focus-within) .iconCircle {
-    transform: scale(1.2);
+    transform: scale(1.15);
 
     &::before {
       transform: translateX(100%);
@@ -36,11 +36,11 @@
 
   // Scale the right neighbor when hovering/focusing
   &:is(:hover, :focus-within) + .toolContainer .iconCircle {
-    transform: scale(1.075);
+    transform: scale(1.05);
   }
 
   // Scale this item when the left neighbor is hovered/focused
   &:has(+ .toolContainer:is(:hover, :focus-within)) .iconCircle {
-    transform: scale(1.075);
+    transform: scale(1.05);
   }
 }

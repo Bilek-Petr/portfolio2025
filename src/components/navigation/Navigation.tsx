@@ -1,23 +1,50 @@
 'use client';
-
 import { useState } from 'react';
-import { NavigationContent } from './NavigationContent';
-import { NavigationToggle } from './NavigationToggle';
+import { motion, AnimatePresence } from 'framer-motion';
+import { NavigationContent } from '@/components/navigation/NavigationContent';
+import { NavigationToggle } from '@/components/navigation/NavigationToggle';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
-import styles from './Navigation.module.scss';
+import { navigationVariants, overlayVariants } from './navigation.animations';
+import styles from '@/components/navigation/Navigation.module.scss';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const isMobile = useMediaQuery('(max-width: 767px)');
+  const isMobile = useMediaQuery('(max-width: 1279px)');
 
   return (
     <>
-      {isMobile && (
-        <NavigationToggle isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
-      )}
-      <nav className={styles.nav} data-state={isOpen ? 'open' : 'closed'}>
-        <NavigationContent onItemClick={() => setIsOpen(false)} />
-      </nav>
+      <NavigationToggle isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="fixed inset-0 hidden bg-black/20 md:block xl:hidden"
+            onClick={() => setIsOpen(false)}
+            style={{ zIndex: 40 }}
+            {...overlayVariants}
+          />
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence mode="wait">
+        <motion.nav
+          className={styles.nav}
+          initial="closed"
+          animate={isOpen || !isMobile ? 'open' : 'closed'}
+          exit="closed"
+          variants={navigationVariants}
+          style={{
+            willChange: 'clip-path, border-radius',
+            translateZ: 0,
+            zIndex: 40,
+          }}
+        >
+          <NavigationContent
+            onItemClick={() => setIsOpen(false)}
+            isOpen={isOpen}
+          />
+        </motion.nav>
+      </AnimatePresence>
     </>
   );
 };

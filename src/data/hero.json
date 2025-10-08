@@ -2,7 +2,7 @@
   "title": "My name is",
   "name": "Petr Bílek...",
   "occupation": "Frontend Developer",
-  "subtitle": "Mountaineer",
+  "subtitle": ["Mountaineer", "Trailrunner", "Traveler"],
   "btnText": "Let's talk with me",
   "btnLink": "/projects",
   "profileImage": "/images/profile.webp",

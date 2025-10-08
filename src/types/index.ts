@@ -3,7 +3,7 @@ export interface HeroData {
   title: string;
   name: string;
   occupation: string;
-  subtitle: string;
+  subtitle: string[];
   btnText: string;
   btnLink: string;
   profileImage: string;

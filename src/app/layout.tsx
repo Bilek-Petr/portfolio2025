@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { IBM_Plex_Sans } from 'next/font/google';
 import './globals.css';
-import { Navigation } from '@/components/navigation';
 import PageLayout from '@/components/layout/PageLayout';
+import ClientScrollProvider from '@/components/providers/ClientScrollProvider';
 
 const ibmPlexSans = IBM_Plex_Sans({
   weight: ['300', '400', '500', '700'],
@@ -17,13 +17,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={`${ibmPlexSans.variable} antialiased`}>
-        <PageLayout>{children}</PageLayout>
+        <ClientScrollProvider>
+          <PageLayout>{children}</PageLayout>
+        </ClientScrollProvider>
       </body>
     </html>
   );

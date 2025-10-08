@@ -5,9 +5,9 @@ export const iconCircleVariants = cva(
   {
     variants: {
       variant: {
-        light: 'bg-light text-accent hover:bg-gray-300',
+        light: 'bg-red-500 text-accent hover:bg-gray-300',
         lightBordered:
-          'bg-light border border-gray-200 text-accent hover:bg-gray-100',
+          'bg-light border border-gray-200 text-accent hover:border-gradient-middle hover:border-8 transition-all duration-300',
         dark: 'bg-accent text-white fill-white hover:bg-gray-100',
         medium: 'bg-gray-100/80',
       },

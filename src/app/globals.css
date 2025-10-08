@@ -8,16 +8,36 @@
   --gradient-start: #b86adf;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
 body {
   font-family: var(--font-ibm-plex-sans), 'IBM Plex Sans', Arial, sans-serif;
 }
 
 ::selection {
-  background-color: #c74313; /* Change this to any color you want */
+  background-color: #e24d17; /* Change this to any color you want */
   color: #ffffff; /* Text color when selected */
 }
 
 ::-moz-selection {
-  background-color: #c74313; /* For Firefox */
+  background-color: #e24d17; /* For Firefox */
   color: #ffffff;
 }

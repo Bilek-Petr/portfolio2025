@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { ToolItem as ToolItemType } from '@/types';
+import { useMousePosition } from '@/hooks/useMousePosition';
 import styles from './toolItem.module.scss';
 
 interface ToolItemProps {
@@ -9,6 +11,13 @@ interface ToolItemProps {
 
 export default function ToolItem({ tool }: ToolItemProps) {
   const textId = `curve-${tool.name.replace(/\s+/g, '-')}`;
+  const {
+    textOffset,
+    isHovering,
+    handleMouseMove,
+    handleMouseEnter,
+    handleMouseLeave,
+  } = useMousePosition();
 
   return (
     <div className={`flex flex-col items-center ${styles.toolContainer}`}>
@@ -26,18 +35,32 @@ export default function ToolItem({ tool }: ToolItemProps) {
         </text>
       </svg>
 
-      {/* Icon Circle */}
+      {/* The circle with a tool icon */}
       <div
-        className={`bg-glassmorphism flex h-20 w-20 items-center justify-center rounded-full p-4 md:h-24 md:w-24 ${styles.iconCircle}`}
+        className={`flex h-20 w-20 items-center justify-center rounded-full p-4 bg-glassmorphism md:h-24 md:w-24 ${styles.iconCircle}`}
+        onMouseMove={handleMouseMove}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
-        <div className="relative w-16 h-16">
+        <motion.div
+          className="relative w-16 h-16"
+          animate={{
+            x: isHovering ? textOffset.x : 0,
+            y: isHovering ? textOffset.y : 0,
+          }}
+          transition={{
+            type: 'spring',
+            stiffness: 300,
+            damping: 30,
+          }}
+        >
           <Image
             src={tool.icon}
             alt={tool.name}
             fill
             className="object-contain brightness-0 invert"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

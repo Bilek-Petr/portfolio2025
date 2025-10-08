@@ -1,11 +1,11 @@
 {
-  "logo": "PB",
+  "logo": "PB.",
   "menuItems": [
-    { "label": "HOME", "url": "#home" },
+    { "label": "HOME", "url": "#hero" },
     { "label": "ABOUT", "url": "#about" },
     { "label": "EXPERIENCE", "url": "#experience" },
     { "label": "PROJECTS", "url": "#projects" },
-    { "label": "CONTACT", "url": "#contact" }
+    { "label": "CONTACT", "url": "#contacts" }
   ],
   "socialIcons": [
     {

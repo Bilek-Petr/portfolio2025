@@ -6,12 +6,14 @@ import {
   type IconCircleVariants,
 } from './iconCircle-variants';
 import { cn } from '@/lib/utils';
+
 interface IconCircleProps extends IconCircleVariants {
   icon: string;
   href?: string;
   onClick?: () => void;
   alt?: string;
 }
+
 export const IconCircle: React.FC<IconCircleProps> = ({
   icon,
   variant,
@@ -21,7 +23,30 @@ export const IconCircle: React.FC<IconCircleProps> = ({
   alt = `${icon} icon`,
 }) => {
   const isInteractive = Boolean(href || onClick);
-  const content = (
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={cn(
+          iconCircleVariants({ variant, size, interactive: isInteractive }),
+          'inline-flex'
+        )}
+      >
+        <Image
+          src={icon}
+          alt={alt}
+          width={20}
+          height={20}
+          className={cn(iconSizeVariants({ size }))}
+        />
+      </a>
+    );
+  }
+
+  return (
     <div
       className={cn(
         iconCircleVariants({ variant, size, interactive: isInteractive })
@@ -37,17 +62,4 @@ export const IconCircle: React.FC<IconCircleProps> = ({
       />
     </div>
   );
-  if (href) {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block"
-      >
-        {content}
-      </a>
-    );
-  }
-  return content;
 };
