@@ -10,10 +10,10 @@ export default function BioItem({ bioInfo }: BioItemProps) {
   return (
     <div>
       <div className="flex items-center gap-3 mb-5">
-        <span className="font-bold leading-none tracking-tighter uppercase text-header-md text-gradient">
+        <span className="text-[clamp(2.5rem,2.5vw,3rem)] font-bold uppercase leading-none tracking-tighter text-gradient">
           {bioInfo.amount}
         </span>
-        <span className="w-1/3 italic font-bold leading-5 text-base-sm">
+        <span className="italic font-bold leading-5 text-base-sm md:w-1/3">
           {bioInfo.unit}
         </span>
       </div>
