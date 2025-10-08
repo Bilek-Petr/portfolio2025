@@ -18,7 +18,6 @@ export default function Projects() {
     );
   };
 
-  console.log(visibleProjects);
   const { preheadline, headline, cta } = typedProjectsData;
   return (
     <section id="projects" className="container py-16 lg:py-28">
