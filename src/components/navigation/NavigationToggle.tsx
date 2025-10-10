@@ -20,7 +20,7 @@ export const NavigationToggle = ({
         scale: 1.2,
         transition: { duration: 0.3 },
       }}
-      whileTap={{ scale: 0.85 }}
+      whileTap={{ scale: 0.8, transition: { duration: 0.15 } }}
     >
       {isOpen ? <X size={24} /> : <Menu size={24} />}
     </motion.button>
