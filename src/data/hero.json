@@ -3,8 +3,8 @@
   "name": "Petr Bílek...",
   "occupation": "Frontend Developer",
   "subtitle": ["Mountaineer", "Trailrunner", "Traveler"],
-  "btnText": "Let's talk with me",
-  "btnLink": "/projects",
+  "btnText": "Get to know me!",
+  "btnLink": "#about",
   "profileImage": "/images/profile.webp",
   "profileAlt": "Profile picture of Petr Bílek"
 }
