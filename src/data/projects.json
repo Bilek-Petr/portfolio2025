@@ -6,31 +6,31 @@
       "type": "Work",
       "title": "Pool Product Configurator",
       "image": "/images/configurator.png",
-      "link": "#"
+      "link": "https://demo.tvorba-eshopy.cz/konfigurator-bazen/"
     },
     {
       "type": "Work",
       "title": "Company Website Noving",
       "image": "/images/site-noving.png",
-      "link": "#"
+      "link": "https://www.noving.cz/"
     },
     {
       "type": "Work",
       "title": "Company Website Eurobach",
       "image": "/images/site-eurobach.png",
-      "link": "#"
+      "link": "https://www.eurobach.cz/"
     },
     {
       "type": "Personal",
-      "title": "Old Personal Portfolio",
-      "image": "/images/site-old-portfolio.png",
-      "link": "#"
+      "title": "Photosnap Site Studio",
+      "image": "/images/site-photosnap.png",
+      "link": "https://bilek-petr.github.io/photosnap_site/invite"
     },
     {
-      "type": "Work",
-      "title": "Interactive Pool Designer",
-      "image": "/images/configurator.png",
-      "link": "#"
+      "type": "Personal",
+      "title": "Mine old portfolio ",
+      "image": "/images/site-old-portfolio.png",
+      "link": "https://bilek-petr.github.io/portfolio/"
     },
     {
       "type": "Work",

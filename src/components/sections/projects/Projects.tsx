@@ -7,29 +7,21 @@ import SectionTitle from '@/components/shared/sectionTitle/SectionTitle';
 import ProjectItem from '@/components/sections/projects/ProjectItem';
 import Button from '@/components/ui/button/regular/Button';
 import { projectAnimations } from './projects.animations';
+import MotionSectionReveal from '@/components/shared/animations/MotionSectionReveal';
+import { useItemsVisibility } from '@/hooks/useItemsVisibility';
 
 const typedProjectsData = projectsData as ProjectsData;
 
 export default function Projects() {
-  const [visibleCount, setVisibleCount] = useState(4);
-  const [isCollapsing, setIsCollapsing] = useState(false);
-
-  const handleToggleProjects = () => {
-    if (visibleCount > 4) {
-      setIsCollapsing(true);
-      setTimeout(() => {
-        setVisibleCount(4);
-        setIsCollapsing(false);
-      }, projectAnimations.exitAnimationDuration);
-    } else {
-      setVisibleCount(typedProjectsData.items.length);
-    }
-  };
-
-  const { preheadline, headline, cta } = typedProjectsData;
+  const { preheadline, headline, cta, items } = typedProjectsData;
+  const { visibleCount, isCollapsing, toggle } = useItemsVisibility(
+    4,
+    items.length,
+    projectAnimations.exitAnimationDuration
+  );
 
   return (
-    <section id="projects" className="container py-16 lg:py-28">
+    <MotionSectionReveal id="projects" className="container py-16 lg:py-28">
       <SectionTitle preheadline={preheadline} headline={headline} />
       <div className="grid gap-14 py-14 lg:grid-cols-2">
         {/* First 4 items - no animation */}
@@ -61,11 +53,11 @@ export default function Projects() {
         className="flex justify-center"
       >
         <Button
-          onClick={handleToggleProjects}
+          onClick={toggle}
           label={visibleCount === 4 ? cta.label : 'Show Less'}
           variant="primary"
         />
       </motion.div>
-    </section>
+    </MotionSectionReveal>
   );
 }

@@ -23,5 +23,5 @@ export const projectAnimations = {
     layout: true,
     transition: { duration: 0.325, ease: 'easeInOut' as const },
   },
-  exitAnimationDuration: 450, // duration + delay in ms
+  exitAnimationDuration: 450,
 } as const;
