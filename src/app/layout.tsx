@@ -3,6 +3,7 @@ import { IBM_Plex_Sans } from 'next/font/google';
 import './globals.css';
 import PageLayout from '@/components/layout/PageLayout';
 import ClientScrollProvider from '@/components/providers/ClientScrollProvider';
+import LoadingProvider from '@/components/providers/LoadingProvider';
 
 const ibmPlexSans = IBM_Plex_Sans({
   weight: ['300', '400', '500', '700'],
@@ -23,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ibmPlexSans.variable} antialiased`}>
-        <ClientScrollProvider>
-          <PageLayout>{children}</PageLayout>
-        </ClientScrollProvider>
+        <LoadingProvider>
+          <ClientScrollProvider>
+            <PageLayout>{children}</PageLayout>
+          </ClientScrollProvider>
+        </LoadingProvider>
       </body>
     </html>
   );
