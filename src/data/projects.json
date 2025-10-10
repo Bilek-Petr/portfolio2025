@@ -28,27 +28,15 @@
     },
     {
       "type": "Personal",
-      "title": "Mine old portfolio ",
-      "image": "/images/site-old-portfolio.png",
-      "link": "https://bilek-petr.github.io/portfolio/"
-    },
-    {
-      "type": "Work",
-      "title": "Noving Corporate Site",
-      "image": "/images/site-noving.png",
-      "link": "#"
-    },
-    {
-      "type": "Work",
-      "title": "Eurobach Business Portal",
-      "image": "/images/site-eurobach.png",
+      "title": "Drone Agency HonemDronem",
+      "image": "/images/site-honemdronem.png",
       "link": "#"
     },
     {
       "type": "Personal",
-      "title": "Previous Portfolio Showcase",
+      "title": "Mine old portfolio",
       "image": "/images/site-old-portfolio.png",
-      "link": "#"
+      "link": "https://bilek-petr.github.io/portfolio/"
     }
   ],
   "cta": { "label": "See more projects", "link": "#" }
