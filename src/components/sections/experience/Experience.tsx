@@ -1,17 +1,17 @@
+'use client';
 import React from 'react';
 import experienceData from '@/data/experience.json';
 import { ExperienceData } from '@/types';
 import SectionTitle from '@/components/shared/sectionTitle/SectionTitle';
 import ExperienceTimeline from '@/components/sections/experience/ExperienceTimeline';
-import Button from '@/components/ui/button/regular/Button';
+import MotionSectionReveal from '@/components/shared/animations/MotionSectionReveal';
 
 const typedExperienceData = experienceData as ExperienceData;
 
 export default function Experience() {
-  const { preheadline, headline, intro, experience, button } =
-    typedExperienceData;
+  const { preheadline, headline, intro, experience } = typedExperienceData;
   return (
-    <section
+    <MotionSectionReveal
       id="experience"
       className="py-16 mt-10 bg-gradient-custom lg:mt-16 lg:rounded-e-2xl lg:py-28"
     >
@@ -29,6 +29,6 @@ export default function Experience() {
           <ExperienceTimeline experience={experience} />
         </div>
       </div>
-    </section>
+    </MotionSectionReveal>
   );
 }

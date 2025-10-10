@@ -8,6 +8,7 @@ import ContactList from '@/components/sections/about/ContactList';
 import BioItem from '@/components/sections/about/BioItem';
 import QuoteBlock from '@/components/sections/about/QuoteBlock';
 import { AboutData } from '@/types';
+import MotionSectionReveal from '@/components/shared/animations/MotionSectionReveal';
 
 const typedAboutData = aboutData as AboutData;
 
@@ -27,7 +28,7 @@ export default function About() {
 
   return (
     <>
-      <section id="about" className="container py-8">
+      <MotionSectionReveal id="about" className="container py-10">
         <SectionTitle preheadline={preheadline} headline={headline} />
 
         <div className="flex flex-col items-center gap-10 pt-10 lg:gap-28 lg:pt-20 2xl:flex-row">
@@ -52,7 +53,7 @@ export default function About() {
 
             <hr className="my-8 border-t border-accent/20" />
 
-            <div className="flex flex-col gap-6 xs:flex-row">
+            <div className="flex flex-col gap-6 sm:flex-row">
               {bio.map((bioItem, index) => (
                 <BioItem key={index} bioInfo={bioItem} />
               ))}
@@ -61,7 +62,7 @@ export default function About() {
             <QuoteBlock quote={quote} />
           </div>
         </div>
-      </section>
+      </MotionSectionReveal>
     </>
   );
 }
