@@ -20,9 +20,9 @@ module.exports = {
       fontSize: {
         'base-sm': 'clamp(0.94rem,1.75vw,1.125rem)',
         'base-md': 'clamp(1rem, 2vw, 1.25rem)',
-        'header-sm': 'clamp(1.5rem,2.2vw,2rem)',
+        'header-sm': 'clamp(1.4rem,2.2vw,2rem)',
         'header-md': 'clamp(1.9rem,3vw,3rem)',
-        'header-lg': 'clamp(3.5rem,6.5vw,7.15rem)',
+        'header-lg': 'clamp(2.8rem,7.5vw,7.15rem)',
       },
       colors: {
         primary: '#FFB147',

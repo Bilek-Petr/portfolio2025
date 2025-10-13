@@ -19,7 +19,7 @@ export const NavigationContent = ({ onItemClick }: NavigationContentProps) => {
 
   return (
     <div
-      className="flex flex-col h-full gap-24 p-12"
+      className="flex flex-col h-full gap-12 p-12 md:gap-24"
       style={{ zIndex: 50, position: 'relative' }}
     >
       <div>
