@@ -26,8 +26,8 @@
   ],
   "bio": [
     {
-      "amount": "1.5",
-      "unit": "Years of experience...",
+      "amount": "1",
+      "unit": "Year of experience...",
       "description": "Hello there! My name is <span class=\"highlight\">Petr Bílek</span>. I am a frontend developer, who values clean and efficient solutions. I love minimalistic approach — both in my design and in my life. Oh yes, I do like gradients and animations."
     },
     {

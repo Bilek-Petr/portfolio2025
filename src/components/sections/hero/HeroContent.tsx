@@ -36,7 +36,7 @@ export default function HeroContent({
       <h1 className="leading-none uppercase text-header-lg">
         {title} <span className="font-bold">{name}</span>
       </h1>
-      <h2 className="flex flex-col gap-1 italic text-header-sm xs:flex-row">
+      <h2 className="flex flex-col gap-1 italic leading-none text-header-sm xs:flex-row">
         <span className="font-bold">{occupation}</span>{' '}
         <span className="hidden xs:inline">|</span>{' '}
         <AnimatePresence mode="wait">

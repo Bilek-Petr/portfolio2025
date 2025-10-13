@@ -9,7 +9,7 @@ import styles from '@/components/navigation/Navigation.module.scss';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const isMobile = useMediaQuery('(max-width: 1279px)');
+  const isTabletSize = useMediaQuery('(max-width: 1279px)');
 
   return (
     <>
@@ -30,7 +30,7 @@ export const Navigation = () => {
         <motion.nav
           className={styles.nav}
           initial="closed"
-          animate={isOpen || !isMobile ? 'open' : 'closed'}
+          animate={isOpen || !isTabletSize ? 'open' : 'closed'}
           exit="closed"
           variants={navigationVariants}
           style={{

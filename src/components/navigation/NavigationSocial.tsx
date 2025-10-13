@@ -8,7 +8,7 @@ export const NavigationSocial = ({
 }) => {
   return (
     <div className="mt-auto">
-      <ul className="flex flex-col gap-3">
+      <ul className="flex flex-row gap-3 xs:flex-col">
         {icons.map((icon, index) => (
           <li key={index}>
             <IconCircle
