@@ -24,17 +24,17 @@
       "type": "Personal",
       "title": "Photosnap Site Studio",
       "image": "/images/site-photosnap.png",
-      "link": "https://bilek-petr.github.io/photosnap_site/invite"
+      "link": "https://bilek-petr.github.io/photosnap_site/"
     },
     {
       "type": "Personal",
       "title": "Drone Agency HonemDronem",
       "image": "/images/site-honemdronem.png",
-      "link": "#"
+      "link": ""
     },
     {
       "type": "Personal",
-      "title": "Mine old portfolio",
+      "title": "Previous Old Portfolio",
       "image": "/images/site-old-portfolio.png",
       "link": "https://bilek-petr.github.io/portfolio/"
     }
