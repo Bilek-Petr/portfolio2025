@@ -7,7 +7,7 @@ interface PageLayoutProps {
 
 export default function PageLayout({ children }: PageLayoutProps) {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-[100dvh]">
       <Navigation />
       <main className="flex-1">{children}</main>
       <SocialsSidebar />
