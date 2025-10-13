@@ -10,10 +10,7 @@ interface NavigationContentProps {
   isOpen?: boolean;
 }
 
-export const NavigationContent = ({
-  onItemClick,
-  isOpen,
-}: NavigationContentProps) => {
+export const NavigationContent = ({ onItemClick }: NavigationContentProps) => {
   const { logo, menuItems, socialIcons } = navigationData as NavigationData;
 
   // Extract section IDs and use the hook

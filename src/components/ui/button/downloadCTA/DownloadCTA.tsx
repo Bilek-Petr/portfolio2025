@@ -43,7 +43,7 @@ export default function DownloadCTA({
       document.body.removeChild(link);
       window.URL.revokeObjectURL(url);
       setIsSuccess(true);
-    } catch (err) {
+    } catch (error) {
       setError('Download failed.');
     }
   };
@@ -65,7 +65,7 @@ export default function DownloadCTA({
       </button>
 
       {error && (
-        <div className="absolute left-0 flex items-center gap-2 mt-2 text-sm text-red-500 top-full">
+        <div className="absolute left-0 flex items-center gap-2 mt-2 text-xs text-red-500 top-full">
           <AlertCircle className="w-4 h-4" />
           <span>{error}</span>
         </div>

@@ -14,7 +14,6 @@ export default function SectionTitle({
   return (
     <div
       className={`leading-6 lg:leading-9 ${variant === 'dark' ? 'text-accent' : 'text-light'}`}
-      role="heading"
       aria-label={headline}
     >
       <span className="italic font-light text-base-md">{preheadline}</span>

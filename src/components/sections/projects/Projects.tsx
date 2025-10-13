@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import projectsData from '@/data/projects.json';
 import { ProjectsData } from '@/types';
