@@ -36,7 +36,7 @@ export default function HeroContent({
       <h1 className="leading-none uppercase text-header-lg">
         {title} <span className="font-bold">{name}</span>
       </h1>
-      <h2 className="italic text-header-sm">
+      <h2 className="flex flex-col gap-1 italic text-header-sm xs:flex-row">
         <span className="font-bold">{occupation}</span>{' '}
         <span className="hidden xs:inline">|</span>{' '}
         <AnimatePresence mode="wait">
@@ -57,21 +57,7 @@ export default function HeroContent({
       </h2>
       <Button href={btnLink} variant="primary" label={btnText} />
 
-      <motion.div
-        className="absolute hidden -left-10 -top-5 -z-10 lg:block"
-        initial={{ scale: 0.8, rotate: -10, opacity: 0.7 }}
-        animate={{
-          scale: [1, 0.95, 1, 0.95, 1],
-          opacity: [0.9, 0.7, 0.9],
-          rotate: [0, 2, -2, 2, 0],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: 'easeInOut',
-          repeatType: 'loop',
-        }}
-      >
+      <motion.div className="absolute hidden -z-10 lg:-left-10 lg:-top-5 lg:block">
         <Image
           src="images/hero-shape.svg"
           alt="decorative shape"

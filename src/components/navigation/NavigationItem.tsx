@@ -28,7 +28,7 @@ export const NavigationItem = ({
 
       <Link
         href={url}
-        className="group relative block overflow-hidden text-[3rem] md:text-base-md"
+        className="group relative block overflow-hidden text-[2rem] md:text-base-md"
         onClick={onClick}
       >
         <div className="relative h-[1.5em] overflow-hidden">
